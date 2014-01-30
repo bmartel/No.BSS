@@ -1,4 +1,4 @@
-No.BSS - No Boostrap Stylesheets
+No.BSS - No Bootstrap Stylesheets
 ==============
 
 A Clean Layout
@@ -15,7 +15,7 @@ Intuitive functions and mixins allow for rapid prototyping and extension of exis
 
 Modern
 --------------
-Pulls inspiration from past frameworks such as Skeleton, with more modern approaches seen used in Gumby, Foundation and Pure. If you're a fan of the less is more principle, you will likely enjoy No BSS's simplistic approach to styling. Easy to use grid, familiar styling structures, and beautiful defaults. It's there when you need it, and gets right out of the way to leave room for more creativity and less configuration.
+Pulls inspiration from past frameworks such as Skeleton, with more modern approaches seen used in Gumby, Foundation and Pure. If you're a fan of the less is more principle, you will likely enjoy No BSS's simplistic approach to styling. Easy to use grid, familiar styling structures, and beautiful defaults. It's there when you need it, and gets right out of the way when you don't.
 
 What are you waiting for?
 --------------
