@@ -1,11 +1,13 @@
 @import "globals", "helpers/mixins";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:,400,600,700,400italic,600italic,700italic);
+//@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
 
 /* #Typography
 ================================================== */
 
 body {
     background: $background-color;
-    font: 1rem $font-stack;
+    font: 1rem $font-stack-alt;
     line-height: $base-line-height;
     color: $body-font-color;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -14,8 +16,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: $header-font-color;
-    font-family: $font-stack;
-    font-weight: 500; 
+    font-family: inherit;
+    font-weight: 600; 
     word-wrap:break-word;
     a { font-weight: inherit; }
 }

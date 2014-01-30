@@ -1,0 +1,163 @@
+@import "globals","compass/css3/transition";
+
+$button-tny: rem-calc(10) !default;
+$button-sml: rem-calc(14) !default;
+$button-med: rem-calc(16) !default;
+$button-lrg: rem-calc(18) !default;
+
+$button-display: inline-block !default;
+$button-margin-bottom: rem-calc(20) !default;
+
+$button-font-family: $body-font-family !default;
+$button-font-color: #fff !default;
+$button-font-color-alt: #333 !default;
+$button-font-tny: rem-calc(11) !default;
+$button-font-sml: rem-calc(13) !default;
+$button-font-med: rem-calc(16) !default;
+$button-font-lrg: rem-calc(20) !default;
+$button-font-weight: normal !default;
+$button-font-align: center !default;
+
+$button-function-factor: -10% !default;
+
+$button-border-width: 0px !default;
+$button-border-style: solid !default;
+
+$button-radius: $global-radius !default;
+$button-disabled-opacity: 0.7 !default;
+
+@mixin button-base($style:true, $display:$button-display) {
+  @if $style {
+    border-style: $button-border-style;
+    border-width: $button-border-width;
+    cursor: $cursor-pointer-value;
+    font-family: $button-font-family;
+    font-weight: $button-font-weight;
+    line-height: normal;
+    margin: 0 0 $button-margin-bottom;
+    position: relative;
+    text-decoration: none;
+    text-align: $button-font-align;
+  }
+  @if $display { display: $display; }
+}
+
+@mixin button-size($padding:$button-med, $full-width:false, $is-input:false) {
+
+  @if $padding {
+    padding-top: $padding;
+    padding-#{$opposite-direction}: $padding * 2;
+    padding-bottom: $padding + rem-calc(1);
+    padding-#{$default-float}: $padding * 2;
+
+    @if      $padding == $button-med { font-size: $button-font-med; }
+    @else if $padding == $button-tny { font-size: $button-font-tny; }
+    @else if $padding == $button-sml { font-size: $button-font-sml; }
+    @else if $padding == $button-lrg { font-size: $button-font-lrg; }
+  }
+
+  @if $full-width {
+    @if $padding {
+    padding-top: $padding;
+    padding-bottom: $padding + rem-calc(1);
+    } @else if $padding == false {
+      padding-top:0;
+      padding-bottom:0;
+    }
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  @if $is-input == $button-lrg {
+    padding-top: $is-input + rem-calc(.5);
+    padding-bottom: $is-input + rem-calc(.5);
+    -webkit-appearance: none;
+    border: none;
+    font-weight: $button-font-weight !important;
+  }
+  @else if $is-input {
+    padding-top: $is-input + rem-calc(1);
+    padding-bottom: $is-input;
+    -webkit-appearance: none;
+    border: none;
+    font-weight: $button-font-weight !important;
+  }
+}
+
+@mixin button-style($bg:$primary-color, $radius:false, $disabled:false) {
+  @if $bg {
+    $bg-lightness: lightness($bg);
+
+    background-color: $bg;
+    border-color: scale-color($bg, $lightness: $button-function-factor);
+    @include transition(all 0.2s linear);
+    &:hover,
+    &:focus { background-color: scale-color($bg, $lightness: $button-function-factor); }
+
+    @if $bg-lightness > 70% {
+      color: $button-font-color-alt;
+      &:hover,
+      &:focus { color: $button-font-color-alt; }
+    }
+    @else {
+      color: $button-font-color;
+      &:hover,
+      &:focus { color: $button-font-color; }
+    }
+  }
+
+  @if $disabled {
+    cursor: $cursor-default-value;
+    opacity: $button-disabled-opacity;
+    @if $experimental {
+      -webkit-box-shadow: none;
+    }
+    box-shadow: none;
+    &:hover,
+    &:focus { background-color: $bg; }
+  }
+
+  @if $radius == true { @include radius($button-radius); }
+  @else if $radius { @include radius($radius); }
+
+}
+
+@mixin button($padding:$button-med, $bg:$primary-color, $radius:false, $full-width:false, $disabled:false, $is-input:false, $is-prefix:false) {
+  @include button-base;
+  @include button-size($padding, $full-width, $is-input);
+  @include button-style($bg, $radius, $disabled);
+}
+
+/* #Buttons
+================================================== */
+.btn{
+    @include button-base;
+    @include button-size($button-sml, false, false);
+    @include button-style($secondary-color, false, false);  
+    
+    &.tiny{ @include button-size($button-tny, false, false); }
+    &.small{ @include button-size($button-sml, false, false); }
+    &.medium{ @include button-size($button-med, false, false); }
+    &.large{ @include button-size($button-lrg, false, false); }
+    
+    &.primary{
+        @include button-style($primary-color, false, false);    
+    }
+
+    &.alert{
+        @include button-style($alert-color, false, false);    
+    }
+
+    &.success{
+        @include button-style($success-color, false, false);    
+    }
+    
+    &.warning{
+        @include button-style($warning-color, false, false);    
+    }
+
+    &.info{
+        @include button-style($info-color, false, false);    
+    }
+}

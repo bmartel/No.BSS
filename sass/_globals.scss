@@ -33,7 +33,7 @@ $body-font-color:               #626262 !default;
 $strong-font-color:             darken($body-font-color, 20%) !default;
 $header-font-color:             #393939 !default;
 $primary-color:                 #1f8dd6 !default;
-$secondary-color:               #e7e7e7 !default;
+$secondary-color:               #efefef !default;
 $alert-color:                   rgb(202, 60, 60) !default;
 $success-color:                 rgb(28, 184, 65) !default;
 $warning-color:                 rgb(223, 117, 20) !default;
@@ -61,7 +61,7 @@ $margin-small:                  rem(10);
 $margin-large:                  1.75 * $margin-small;
 
 $paragraph-font-family:         inherit !default;
-$paragraph-font-weight:         normal !default;
+$paragraph-font-weight:         400 !default;
 $paragraph-font-size:           1rem !default;
 $paragraph-line-height:         1.6 !default;
 $paragraph-margin-bottom:       1rem !default;
@@ -71,7 +71,13 @@ $paragraph-aside-font-style:    italic !default;
 $paragraph-text-rendering:      optimizeLegibility !default;
 
 $content-font-size:             1.0625rem;
+$global-radius:                 rem(3);
+$cursor-pointer-value:          pointer;
+$default-float:                 "left" !default;
+$opposite-direction:            "right" !default;
 
 $font-stack:                    "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack-alt:                'Source Sans Pro', sans-serif;
+$body-font-family:              $font-stack-alt;
 $container-padding:             30px;
 
