@@ -79,7 +79,6 @@ body {
   line-height: 1.75;
   color: #626262;
   -webkit-font-smoothing: antialiased;
-  /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
