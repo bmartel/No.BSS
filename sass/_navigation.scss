@@ -1,0 +1,17 @@
+@import "functions";
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: rem-calc(6 12);
+    text-decoration: none;
+  }
+}

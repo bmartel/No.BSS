@@ -1,0 +1,28 @@
+@import "globals", "functions","compass/css3/box-shadow";
+
+html, body{ font-size: $rem-base; }
+
+body
+{
+    background: #f2f2f2;
+}
+
+#main
+{
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    background: white;
+    width: 960px;
+    margin: 30px auto;
+    
+}
+
+.fancy-wrap
+{
+    background: white;
+    border-radius: 0;
+    @include single-box-shadow(rgba(0,0,0,0.3), 0, 0, 8px, false, false);
+    position: relative;
+    z-index: 90;
+    
+}

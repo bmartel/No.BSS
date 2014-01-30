@@ -1,0 +1,14 @@
+@import "../functions";
+
+@function col-width($value, $grid-size: $grid-base, $gutter-width: $column-gutter, $columns: $column-count){
+    $col-widths: strip-unit($grid-size) / $columns;
+    $col-width: $col-widths * $value - (2 * strip-unit($gutter-width));
+    @return  $col-width * 1rem;
+}
+
+$column-offset:              col-width(1) + (2 * $column-gutter);          
+$column-offset-tablet:       col-width(1, $tablet-base) + (2 * $column-gutter);
+
+@function col-offset($value, $column-offet-size: $column-offset){
+    @return $value * $column-offet-size;
+}

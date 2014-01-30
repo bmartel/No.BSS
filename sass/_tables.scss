@@ -1,0 +1,70 @@
+
+@import "globals";
+
+/* #Tables
+================================================== */
+.clean-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: rem(1px) solid #cbcbcb;
+    
+    caption {
+        color: #000;
+        font: italic 85%/1 Arial, sans-serif;
+        padding: rem-calc(1px 0);
+        text-align: center;
+    }
+
+    td, th {
+        border-left: rem(1px) solid $table-border-color;
+        border-width: rem-calc(0 0 0 1px);
+        font-size: inherit;
+        margin: 0;
+        overflow: visible;
+        padding: rem-calc(6px 12px);
+    }
+
+    td:first-child,
+    th:first-child {
+        border-left-width: 0;
+    }
+
+    thead {
+        background: $thead-bg-color;
+        color: $thead-font-color;
+        text-align: left;
+        vertical-align: bottom;
+    }
+
+    td {
+        background-color: $td-bg-color;
+    }
+}
+
+.clean-table-odd td {
+    background-color: $table-stripe-color;
+}
+
+.clean-table-striped tr:nth-child(2n-1) td {
+    background-color: $table-stripe-color;
+}
+
+.clean-table-bordered td {
+    border-bottom: rem(1px) solid $table-border-color;
+    
+}
+
+.clean-table-bordered tbody > tr:last-child td,
+.clean-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+.clean-table-horizontal td,
+.clean-table-horizontal th {
+    border-width: rem-calc(0 0 1px 0);
+    border-bottom: rem(1px) solid $table-border-color;
+}
+.clean-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}

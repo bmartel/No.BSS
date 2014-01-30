@@ -1,0 +1,13 @@
+{
+  "name": "clean_layout",
+  "version": "0.0.0",
+  "description": "Simple html5 layout and component styling",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-compass": "~0.7.1"
+  },
+  "author": "Brandon Martel",
+  "license": "BSD"
+}

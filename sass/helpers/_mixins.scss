@@ -1,0 +1,10 @@
+@import "../globals";
+
+@mixin center-it{
+    margin: 0 auto;   
+}
+
+@mixin scale-with-grid{
+    width: 100%;
+    height: auto;
+}

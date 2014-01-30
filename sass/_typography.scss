@@ -1,0 +1,81 @@
+@import "globals", "helpers/mixins";
+
+/* #Typography
+================================================== */
+
+body {
+    background: $background-color;
+    font: 1rem $font-stack;
+    line-height: $base-line-height;
+    color: $body-font-color;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $header-font-color;
+    font-family: $font-stack;
+    font-weight: 500; 
+    word-wrap:break-word;
+    a { font-weight: inherit; }
+}
+h1,h2,h3{ margin-top: $margin-large; margin-bottom: $margin-small; }
+h4,h5,h6{ margin-top: $margin-small; margin-bottom: $margin-small; }
+
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+h5 { font-size: $h5-font-size; }
+h6 { font-size: $h6-font-size; }
+.subheader { color: #777; }
+
+p { 
+    font-family: $paragraph-font-family;
+    font-weight: $paragraph-font-weight;
+    font-size: $paragraph-font-size;
+    line-height: $paragraph-line-height;
+    margin-bottom: $paragraph-margin-bottom;
+    text-rendering: $paragraph-text-rendering;
+    
+    img { margin: 0; }
+    &.lead {   
+        font-size: $paragraph-font-size + rem-calc(3.5);
+        line-height: $paragraph-line-height; 
+    }
+}
+
+.content{
+    p {font-size: $content-font-size;}
+}
+
+em { font-style: italic; }
+strong { font-weight: bold; color: #333; }
+small { font-size: 80%; }
+
+blockquote, blockquote p { font-size: rem(17px); line-height: rem(24px); color: #777; font-style: italic; }
+blockquote { margin: rem-calc(0 0 20px); padding: rem-calc(9px 20px 0 19px); border-left: rem(1px) solid #ddd; }
+blockquote cite { display: block; font-size: rem(12px); color: #555; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+hr { border: solid #ddd; border-width: rem-calc(1px 0 0); clear: both; margin: rem-calc(10px 0 30px); height: 0; }
+
+a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+a:hover, a:focus { color: #000; }
+p a, p a:visited { line-height: inherit; }
+
+ul, ol { margin-bottom: rem(20px); }
+ul { list-style: none outside; }
+ol { list-style: decimal; }
+ol, ul.square, ul.circle, ul.disc { margin-left: rem(30px); }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul.disc { list-style: disc outside; }
+ul ul, ul ol,
+ol ol, ol ul { margin: rem-calc(4px 0 5px 30px); font-size: 90%;  }
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: rem(6px); }
+li { line-height: rem(18px); margin-bottom: rem(12px); }
+ul.large li { line-height: rem(21px); }
+li p { line-height: rem(21px); }
