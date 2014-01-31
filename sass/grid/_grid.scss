@@ -7,7 +7,11 @@
     width:            $grid-base; 
     margin:           0 auto; 
     padding:          0;
-    
+
+    .content{
+      width: 100%;
+      margin: 0;
+    }
     .column, 
     .columns{
         float:        left; 
@@ -124,7 +128,11 @@
 
 @media #{$mobile-phone-screen-portrait} {
     .container {
-        width:              $mobile-portrait-base - $both-gutters; 
+        width:              $mobile-portrait-base - $both-gutters;
+        .content{
+          width: 98%;
+          margin: 0 auto;
+        }
         .columns,
         .column             { margin: 0; }
         .one.column,
@@ -144,8 +152,10 @@
         .fourteen.columns,
         .fifteen.columns,
         .sixteen.columns,
+        .one-third.columns,
         .one-third.column,
-        .two-thirds.column  { width: 100%; }
+        .two-thirds.columns,
+        .two-thirds.column { width: 100%; }
         
         /* Offsets */
         .offset-by-one,
@@ -195,7 +205,9 @@
         .fourteen.columns,
         .fifteen.columns,
         .sixteen.columns,
+        .one-third.columns,
         .one-third.column,
+        .two-thirds.columns,
         .two-thirds.column { width: 100%; }
     }
 }
