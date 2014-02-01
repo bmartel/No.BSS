@@ -82,6 +82,20 @@ li { line-height: rem(18px); margin-bottom: rem(12px); }
 ul.large li { line-height: rem(21px); }
 li p { line-height: rem(21px); }
 
-.center-text{
-  text-align: center;
+.text{
+  &.center   { text-align: center;      }
+  &.primary  { color: $primary-color;   }
+  &.secondary{ color: $secondary-color; }
+  &.alert    { color: $alert-color;     }
+  &.success  { color: $success-color;   }
+  &.warning  { color: $warning-color;   }
+  &.info     { color: $info-color;      }
+  &.purple   { color: $purple;          }
+  &.dark-gray    { color: $dark-gray;       }
+  &.light-purple { color: $light-purple;    }
+  &.de-emphasize { color: $dull-text-color; }
 }
+@media #{$tablet-screen-up}{
+  .icon-center { text-align: center; }
+}
+

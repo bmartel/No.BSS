@@ -1,0 +1,3 @@
+@function percentage-calc($value, $grid-size: $grid-base){
+  @return ($value / $grid-base) * 100;
+}

@@ -303,11 +303,57 @@ li p {
   line-height: 1.3125rem;
 }
 
-/* line 85, ../sass/_typography.scss */
-.center-text {
+/* line 86, ../sass/_typography.scss */
+.text.center {
   text-align: center;
 }
+/* line 87, ../sass/_typography.scss */
+.text.primary {
+  color: #1f8dd6;
+}
+/* line 88, ../sass/_typography.scss */
+.text.secondary {
+  color: #e5e5e5;
+}
+/* line 89, ../sass/_typography.scss */
+.text.alert {
+  color: #ca3c3c;
+}
+/* line 90, ../sass/_typography.scss */
+.text.success {
+  color: #1cb841;
+}
+/* line 91, ../sass/_typography.scss */
+.text.warning {
+  color: #df7514;
+}
+/* line 92, ../sass/_typography.scss */
+.text.info {
+  color: #42b8dd;
+}
+/* line 93, ../sass/_typography.scss */
+.text.purple {
+  color: #8f00ff;
+}
+/* line 94, ../sass/_typography.scss */
+.text.dark-gray {
+  color: #555555;
+}
+/* line 95, ../sass/_typography.scss */
+.text.light-purple {
+  color: #d299ff;
+}
+/* line 96, ../sass/_typography.scss */
+.text.de-emphasize {
+  color: #777777;
+}
 
+@media only screen and (min-width: 48rem) {
+  /* line 99, ../sass/_typography.scss */
+  .icon-center {
+    text-align: center;
+  }
+}
 /* #Buttons
 ================================================== */
 /* line 134, ../sass/_buttons.scss */
@@ -491,6 +537,23 @@ li p {
   z-index: 90;
 }
 
+/* line 14, ../sass/_container.scss */
+.bg-color.dark {
+  background-color: #393939;
+}
+/* line 15, ../sass/_container.scss */
+.bg-color.light {
+  background-color: #fdfdfd;
+}
+/* line 16, ../sass/_container.scss */
+.bg-color.gray {
+  background-color: #626262;
+}
+/* line 17, ../sass/_container.scss */
+.bg-color.purple {
+  background-color: #8f00ff;
+}
+
 /* line 4, ../sass/_navigation.scss */
 nav ul {
   margin: 0;
@@ -608,75 +671,77 @@ nav a {
 .container .sixteen.columns {
   width: 58.75rem;
 }
-/* line 45, ../sass/grid/_grid.scss */
-.container .one-third.column {
-  width: 18.75rem;
-}
-/* line 46, ../sass/grid/_grid.scss */
-.container .two-thirds.column {
-  width: 38.75rem;
-}
 /* line 49, ../sass/grid/_grid.scss */
+.container .one-third.columns,
+.container .one-third.column {
+  width: 31.24967%;
+}
+/* line 51, ../sass/grid/_grid.scss */
+.container .two-thirds.columns,
+.container .two-thirds.column {
+  width: 64.58367%;
+}
+/* line 54, ../sass/grid/_grid.scss */
 .container .offset-by-one {
   padding-left: 3.75rem;
 }
-/* line 50, ../sass/grid/_grid.scss */
+/* line 55, ../sass/grid/_grid.scss */
 .container .offset-by-two {
   padding-left: 7.5rem;
 }
-/* line 51, ../sass/grid/_grid.scss */
+/* line 56, ../sass/grid/_grid.scss */
 .container .offset-by-three {
   padding-left: 11.25rem;
 }
-/* line 52, ../sass/grid/_grid.scss */
+/* line 57, ../sass/grid/_grid.scss */
 .container .offset-by-four {
   padding-left: 15rem;
 }
-/* line 53, ../sass/grid/_grid.scss */
+/* line 58, ../sass/grid/_grid.scss */
 .container .offset-by-five {
   padding-left: 18.75rem;
 }
-/* line 54, ../sass/grid/_grid.scss */
+/* line 59, ../sass/grid/_grid.scss */
 .container .offset-by-six {
   padding-left: 22.5rem;
 }
-/* line 55, ../sass/grid/_grid.scss */
+/* line 60, ../sass/grid/_grid.scss */
 .container .offset-by-seven {
   padding-left: 26.25rem;
 }
-/* line 56, ../sass/grid/_grid.scss */
+/* line 61, ../sass/grid/_grid.scss */
 .container .offset-by-eight {
   padding-left: 30rem;
 }
-/* line 57, ../sass/grid/_grid.scss */
+/* line 62, ../sass/grid/_grid.scss */
 .container .offset-by-nine {
   padding-left: 33.75rem;
 }
-/* line 58, ../sass/grid/_grid.scss */
+/* line 63, ../sass/grid/_grid.scss */
 .container .offset-by-ten {
   padding-left: 37.5rem;
 }
-/* line 59, ../sass/grid/_grid.scss */
+/* line 64, ../sass/grid/_grid.scss */
 .container .offset-by-eleven {
   padding-left: 41.25rem;
 }
-/* line 60, ../sass/grid/_grid.scss */
+/* line 65, ../sass/grid/_grid.scss */
 .container .offset-by-twelve {
   padding-left: 45rem;
 }
-/* line 61, ../sass/grid/_grid.scss */
+/* line 66, ../sass/grid/_grid.scss */
 .container .offset-by-thirteen {
   padding-left: 48.75rem;
 }
-/* line 62, ../sass/grid/_grid.scss */
+/* line 67, ../sass/grid/_grid.scss */
 .container .offset-by-fourteen {
   padding-left: 52.5rem;
 }
-/* line 63, ../sass/grid/_grid.scss */
+/* line 68, ../sass/grid/_grid.scss */
 .container .offset-by-fifteen {
   padding-left: 56.25rem;
 }
-/* line 64, ../sass/grid/_grid.scss */
+/* line 69, ../sass/grid/_grid.scss */
 .container .row {
   margin-bottom: 1.25rem;
 }
@@ -685,162 +750,164 @@ nav a {
 ================================================== */
 /* Note: Design for a width of 48rem (768px) */
 @media only screen and (min-width: 48rem) and (max-width: 59.9375rem) {
-  /* line 75, ../sass/grid/_grid.scss */
+  /* line 80, ../sass/grid/_grid.scss */
   .container {
     width: 48rem;
     /* Offsets */
   }
-  /* line 78, ../sass/grid/_grid.scss */
+  /* line 83, ../sass/grid/_grid.scss */
   .container .column,
   .container .columns {
     margin-left: 0.625rem;
     margin-right: 0.625rem;
   }
-  /* line 79, ../sass/grid/_grid.scss */
+  /* line 84, ../sass/grid/_grid.scss */
   .container .column.alpha, .container .columns.alpha {
     margin-left: 0;
     margin-right: 0.625rem;
   }
-  /* line 80, ../sass/grid/_grid.scss */
+  /* line 85, ../sass/grid/_grid.scss */
   .container .column.omega, .container .columns.omega {
     margin-right: 0;
     margin-left: 0.625rem;
   }
-  /* line 81, ../sass/grid/_grid.scss */
+  /* line 86, ../sass/grid/_grid.scss */
   .container .alpha.omega {
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 84, ../sass/grid/_grid.scss */
+  /* line 89, ../sass/grid/_grid.scss */
   .container .one.column,
   .container .one.columns {
     width: 1.75rem;
   }
-  /* line 85, ../sass/grid/_grid.scss */
+  /* line 90, ../sass/grid/_grid.scss */
   .container .two.columns {
     width: 4.75rem;
   }
-  /* line 86, ../sass/grid/_grid.scss */
+  /* line 91, ../sass/grid/_grid.scss */
   .container .three.columns {
     width: 7.75rem;
   }
-  /* line 87, ../sass/grid/_grid.scss */
+  /* line 92, ../sass/grid/_grid.scss */
   .container .four.columns {
     width: 10.75rem;
   }
-  /* line 88, ../sass/grid/_grid.scss */
+  /* line 93, ../sass/grid/_grid.scss */
   .container .five.columns {
     width: 13.75rem;
   }
-  /* line 89, ../sass/grid/_grid.scss */
+  /* line 94, ../sass/grid/_grid.scss */
   .container .six.columns {
     width: 16.75rem;
   }
-  /* line 90, ../sass/grid/_grid.scss */
+  /* line 95, ../sass/grid/_grid.scss */
   .container .seven.columns {
     width: 19.75rem;
   }
-  /* line 91, ../sass/grid/_grid.scss */
+  /* line 96, ../sass/grid/_grid.scss */
   .container .eight.columns {
     width: 22.75rem;
   }
-  /* line 92, ../sass/grid/_grid.scss */
+  /* line 97, ../sass/grid/_grid.scss */
   .container .nine.columns {
     width: 25.75rem;
   }
-  /* line 93, ../sass/grid/_grid.scss */
+  /* line 98, ../sass/grid/_grid.scss */
   .container .ten.columns {
     width: 28.75rem;
   }
-  /* line 94, ../sass/grid/_grid.scss */
+  /* line 99, ../sass/grid/_grid.scss */
   .container .eleven.columns {
     width: 31.75rem;
   }
-  /* line 95, ../sass/grid/_grid.scss */
+  /* line 100, ../sass/grid/_grid.scss */
   .container .twelve.columns {
     width: 34.75rem;
   }
-  /* line 96, ../sass/grid/_grid.scss */
+  /* line 101, ../sass/grid/_grid.scss */
   .container .thirteen.columns {
     width: 37.75rem;
   }
-  /* line 97, ../sass/grid/_grid.scss */
+  /* line 102, ../sass/grid/_grid.scss */
   .container .fourteen.columns {
     width: 40.75rem;
   }
-  /* line 98, ../sass/grid/_grid.scss */
+  /* line 103, ../sass/grid/_grid.scss */
   .container .fifteen.columns {
     width: 43.75rem;
   }
-  /* line 99, ../sass/grid/_grid.scss */
+  /* line 104, ../sass/grid/_grid.scss */
   .container .sixteen.columns {
     width: 46.75rem;
   }
-  /* line 101, ../sass/grid/_grid.scss */
+  /* line 107, ../sass/grid/_grid.scss */
+  .container .one-third.columns,
   .container .one-third.column {
-    width: 14.75rem;
+    width: 31.24967%;
   }
-  /* line 102, ../sass/grid/_grid.scss */
+  /* line 109, ../sass/grid/_grid.scss */
+  .container .two-thirds.columns,
   .container .two-thirds.column {
-    width: 30.75rem;
+    width: 64.58367%;
   }
-  /* line 105, ../sass/grid/_grid.scss */
+  /* line 113, ../sass/grid/_grid.scss */
   .container .offset-by-one {
     padding-left: 3rem;
   }
-  /* line 106, ../sass/grid/_grid.scss */
+  /* line 114, ../sass/grid/_grid.scss */
   .container .offset-by-two {
     padding-left: 6rem;
   }
-  /* line 107, ../sass/grid/_grid.scss */
+  /* line 115, ../sass/grid/_grid.scss */
   .container .offset-by-three {
     padding-left: 9rem;
   }
-  /* line 108, ../sass/grid/_grid.scss */
+  /* line 116, ../sass/grid/_grid.scss */
   .container .offset-by-four {
     padding-left: 12rem;
   }
-  /* line 109, ../sass/grid/_grid.scss */
+  /* line 117, ../sass/grid/_grid.scss */
   .container .offset-by-five {
     padding-left: 15rem;
   }
-  /* line 110, ../sass/grid/_grid.scss */
+  /* line 118, ../sass/grid/_grid.scss */
   .container .offset-by-six {
     padding-left: 18rem;
   }
-  /* line 111, ../sass/grid/_grid.scss */
+  /* line 119, ../sass/grid/_grid.scss */
   .container .offset-by-seven {
     padding-left: 21rem;
   }
-  /* line 112, ../sass/grid/_grid.scss */
+  /* line 120, ../sass/grid/_grid.scss */
   .container .offset-by-eight {
     padding-left: 24rem;
   }
-  /* line 113, ../sass/grid/_grid.scss */
+  /* line 121, ../sass/grid/_grid.scss */
   .container .offset-by-nine {
     padding-left: 27rem;
   }
-  /* line 114, ../sass/grid/_grid.scss */
+  /* line 122, ../sass/grid/_grid.scss */
   .container .offset-by-ten {
     padding-left: 30rem;
   }
-  /* line 115, ../sass/grid/_grid.scss */
+  /* line 123, ../sass/grid/_grid.scss */
   .container .offset-by-eleven {
     padding-left: 33rem;
   }
-  /* line 116, ../sass/grid/_grid.scss */
+  /* line 124, ../sass/grid/_grid.scss */
   .container .offset-by-twelve {
     padding-left: 36rem;
   }
-  /* line 117, ../sass/grid/_grid.scss */
+  /* line 125, ../sass/grid/_grid.scss */
   .container .offset-by-thirteen {
     padding-left: 39rem;
   }
-  /* line 118, ../sass/grid/_grid.scss */
+  /* line 126, ../sass/grid/_grid.scss */
   .container .offset-by-fourteen {
     padding-left: 42rem;
   }
-  /* line 119, ../sass/grid/_grid.scss */
+  /* line 127, ../sass/grid/_grid.scss */
   .container .offset-by-fifteen {
     padding-left: 45rem;
   }
@@ -849,22 +916,22 @@ nav a {
 ================================================== */
 /* Note: Design for a width of 20rem (320px) */
 @media only screen and (max-width: 47.9375rem) {
-  /* line 130, ../sass/grid/_grid.scss */
+  /* line 138, ../sass/grid/_grid.scss */
   .container {
     width: 18.75rem;
     /* Offsets */
   }
-  /* line 132, ../sass/grid/_grid.scss */
+  /* line 140, ../sass/grid/_grid.scss */
   .container .content {
     width: 98%;
     margin: 0 auto;
   }
-  /* line 137, ../sass/grid/_grid.scss */
+  /* line 145, ../sass/grid/_grid.scss */
   .container .columns,
   .container .column {
     margin: 0;
   }
-  /* line 158, ../sass/grid/_grid.scss */
+  /* line 166, ../sass/grid/_grid.scss */
   .container .one.column,
   .container .one.columns,
   .container .two.columns,
@@ -888,7 +955,7 @@ nav a {
   .container .two-thirds.column {
     width: 100%;
   }
-  /* line 175, ../sass/grid/_grid.scss */
+  /* line 184, ../sass/grid/_grid.scss */
   .container .offset-by-one,
   .container .offset-by-two,
   .container .offset-by-three,
@@ -911,16 +978,16 @@ nav a {
 ================================================== */
 /* Note: Design for a width of 30em (480px) */
 @media only screen and (min-width: 30rem) and (max-width: 47.9375rem) {
-  /* line 187, ../sass/grid/_grid.scss */
+  /* line 196, ../sass/grid/_grid.scss */
   .container {
     width: 28.75rem;
   }
-  /* line 190, ../sass/grid/_grid.scss */
+  /* line 199, ../sass/grid/_grid.scss */
   .container .columns,
   .container .column {
     margin: 0;
   }
-  /* line 211, ../sass/grid/_grid.scss */
+  /* line 220, ../sass/grid/_grid.scss */
   .container .one.column,
   .container .one.columns,
   .container .two.columns,
@@ -948,7 +1015,7 @@ nav a {
 /* #Clearing
 ================================================== */
 /* Self Clearing! */
-/* line 220, ../sass/grid/_grid.scss */
+/* line 229, ../sass/grid/_grid.scss */
 .container:after {
   content: "\0020";
   display: block;
@@ -959,7 +1026,7 @@ nav a {
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-/* line 227, ../sass/grid/_grid.scss */
+/* line 236, ../sass/grid/_grid.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -972,20 +1039,20 @@ or wrap each row of columns in a <div class="row"> */
   height: 0;
 }
 
-/* line 235, ../sass/grid/_grid.scss */
+/* line 244, ../sass/grid/_grid.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 238, ../sass/grid/_grid.scss */
+/* line 247, ../sass/grid/_grid.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 242, ../sass/grid/_grid.scss */
+/* line 251, ../sass/grid/_grid.scss */
 .clear {
   clear: both;
   display: block;
@@ -1121,15 +1188,14 @@ or wrap each row of columns in a <div class="row"> */
 .clean-form textarea:focus {
   outline: 0;
   outline: thin dotted \9;
-  /* IE6-9 */
-  border-color: #129FEA;
+  border-color: #1f8dd6;
 }
 /* line 58, ../sass/_forms.scss */
 .clean-form input[type="file"]:focus,
 .clean-form input[type="radio"]:focus,
 .clean-form input[type="checkbox"]:focus {
   outline: thin dotted #333;
-  outline: 0.0625rem auto #129fea;
+  outline: 0.0625rem auto #1f8dd6;
 }
 /* line 63, ../sass/_forms.scss */
 .clean-form .clean-checkbox,
@@ -1162,34 +1228,32 @@ or wrap each row of columns in a <div class="row"> */
 .clean-form input[readonly],
 .clean-form select[readonly],
 .clean-form textarea[readonly] {
-  background: #eee;
-  /* menu hover bg color */
-  color: #777;
-  /* menu text color */
-  border-color: #ccc;
+  background: #eeeeee;
+  color: #777777;
+  border-color: #cecece;
 }
 /* line 96, ../sass/_forms.scss */
 .clean-form input:focus:invalid,
 .clean-form textarea:focus:invalid,
 .clean-form select:focus:invalid {
-  color: #b94a48;
-  border: 0.0625rem solid #ee5f5b;
+  color: #cf5050;
+  border: 0.0625rem solid #d56464;
 }
 /* line 102, ../sass/_forms.scss */
 .clean-form input:focus:invalid:focus,
 .clean-form textarea:focus:invalid:focus,
 .clean-form select:focus:invalid:focus {
-  border-color: #e9322d;
+  border-color: #ca3c3c;
 }
 /* line 107, ../sass/_forms.scss */
 .clean-form input[type="file"]:focus:invalid:focus,
 .clean-form input[type="radio"]:focus:invalid:focus,
 .clean-form input[type="checkbox"]:focus:invalid:focus {
-  outline-color: #e9322d;
+  outline-color: #ca3c3c;
 }
 /* line 110, ../sass/_forms.scss */
 .clean-form select {
-  border: 0.0625rem solid #cccccc;
+  border: 0.0625rem solid #cecece;
   background-color: white;
 }
 /* line 114, ../sass/_forms.scss */
@@ -1215,7 +1279,7 @@ or wrap each row of columns in a <div class="row"> */
   margin-bottom: 0.3rem;
   font-size: 125%;
   color: #333;
-  border-bottom: 0.0625rem solid #e5e5e5;
+  border-bottom: 0.0625rem solid #cecece;
 }
 /* line 137, ../sass/_forms.scss */
 .clean-form input.clean-input-rounded,
@@ -1409,15 +1473,36 @@ or wrap each row of columns in a <div class="row"> */
     padding: 0.2rem 0 0.8rem;
   }
 }
-/* line 23, ../sass/_panels.scss */
+/* line 37, ../sass/_panels.scss */
 .panel {
-  background: rgba(14, 147, 207, 0.61);
-  border: 0.0625rem solid rgba(14, 144, 202, 0.61);
-  min-height: 18.75rem;
+  border-style: solid;
+  border-width: 0.0625rem;
+  padding: 1.25rem;
   border-radius: none;
+  border-color: #e5e5e5;
+  background-color: #e8e8e8;
+}
+/* line 28, ../sass/_panels.scss */
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
+  color: #3f3f3f;
   text-align: center;
 }
-/* line 10, ../sass/_panels.scss */
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
-  color: #ffffff;
+/* line 41, ../sass/_panels.scss */
+.panel.callout {
+  border-color: #1e8ad2;
+  background-color: #1f8dd6;
+}
+/* line 28, ../sass/_panels.scss */
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p {
+  color: white;
+}
+/* line 42, ../sass/_panels.scss */
+.panel.dark {
+  border-color: #757575;
+  background-color: #787878;
+}
+/* line 28, ../sass/_panels.scss */
+.panel.dark h1, .panel.dark h2, .panel.dark h3, .panel.dark h4, .panel.dark h5, .panel.dark h6, .panel.dark p {
+  color: white;
+  text-align: center;
 }

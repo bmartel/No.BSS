@@ -1,25 +1,43 @@
 @import "globals", "helpers/mixins";
 
-@mixin panelbase(){
-  $bg: rgba(14, 147, 207, 0.61);
+@mixin panelbase($border-radius: false, $use-global-radius: true){
 
-  background: $bg;
-  border: rem(1) solid darken($bg, 1%);
+  border-style: solid;
+  border-width: rem(1);
+  padding:      rem(20);
+
+
+  @if $border-radius {
+    @if $use-global-radius { border-radius: $global-radius; }
+    @else { border-radius: $border-radius; }
+  }
+  @else { border-radius: none; }
+
+}
+
+@mixin panelstyle($bg: $panel-default-bg-color, $display-border: true, $display-bg: true, $center-text: false){
+  $bg-lightness: lightness($bg);
+
+  @if $display-border { border-color: darken($bg, 1%); }
+  @else { border-color: transparent; }
+
+  @if $display-bg{ background-color: $bg; }
+  @else { background-color: transparent; }
 
 
   h1,h2,h3,h4,h5,h6,p{
-    color: #ffffff;
+    @if $bg-lightness > 70% { color: $panel-font-color-alt; }
+    @else                   { color: $panel-font-color; }
+
+    @if $center-text { text-align: center; }
   }
-
-  min-height: rem(300);
-  border-radius: none;
-  text-align: center;
-}
-
-@mixin panelstyle(){
 
 }
 
 .panel{
-  @include panelbase;
+  @include panelbase();
+  @include panelstyle($center-text: true);
+
+  &.callout { @include panelstyle($primary-color,true); }
+  &.dark { @include panelstyle($bg: #787878, $center-text: true); }
 }

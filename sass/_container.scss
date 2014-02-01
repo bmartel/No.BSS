@@ -10,3 +10,9 @@
     
 }
 
+.bg-color {
+  &.dark   { background-color: $background-color-alt; }
+  &.light  { background-color: $background-color; }
+  &.gray  { background-color: $gray; }
+  &.purple { background-color: $purple }
+}

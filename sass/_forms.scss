@@ -50,14 +50,14 @@
   select:focus,
   textarea:focus {
     outline: 0;
-    outline: thin dotted \9; /* IE6-9 */
-    border-color: #129FEA;
+    outline: thin dotted \9;
+    border-color: $input-focus-color;
   }
   input[type="file"]:focus,
   input[type="radio"]:focus,
   input[type="checkbox"]:focus {
     outline: thin dotted #333;
-    outline: rem(1px) auto #129FEA;
+    outline: rem(1px) auto $input-focus-color;
   }
   .clean-checkbox,
   .clean-radio {
@@ -81,34 +81,34 @@
   select[disabled],
   textarea[disabled] {
     cursor: not-allowed;
-    background-color: #eaeded;
-    color: #cad2d3;
+    background-color: $input-disabled-bg-color;
+    color: $input-disabled-font-color;
   }
   input[readonly],
   select[readonly],
   textarea[readonly] {
-    background: #eee; /* menu hover bg color */
-    color: #777; /* menu text color */
-    border-color: #ccc;
+    background: $input-bg-color;
+    color: $input-font-color;
+    border-color: $input-border-color;
   }
   input:focus:invalid,
   textarea:focus:invalid,
   select:focus:invalid {
-    color: #b94a48;
-    border: rem(1px) solid #ee5f5b;
+    color: $input-error-font-color;
+    border: rem(1px) solid $input-error-border-color;
   }
   input:focus:invalid:focus,
   textarea:focus:invalid:focus,
   select:focus:invalid:focus {
-    border-color: #e9322d;
+    border-color: $alert-color;
   }
   input[type="file"]:focus:invalid:focus,
   input[type="radio"]:focus:invalid:focus,
   input[type="checkbox"]:focus:invalid:focus {
-    outline-color: #e9322d;
+    outline-color: $alert-color;
   }
   select {
-    border: rem(1px) solid #ccc;
+    border: rem(1px) solid $input-border-color;
     background-color: white;
   }
   select[multiple] {
@@ -130,7 +130,7 @@
     margin-bottom: 0.3rem;
     font-size: 125%;
     color: #333;
-    border-bottom: rem(1px) solid #e5e5e5;
+    border-bottom: rem(1px) solid $input-border-color;
   }
 
   input.clean-input-rounded,
@@ -251,7 +251,7 @@
   font-size: 90%;
 }
 
-@media only screen and (max-width : rem(480px)) {
+@media #{$mobile-only} {
   .clean-form {
     fieldset{
       width: 98%;

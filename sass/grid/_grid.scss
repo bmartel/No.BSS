@@ -42,9 +42,14 @@
     .fifteen.columns                 { width: col-width(15); }
     .sixteen.columns                 { width: col-width(16); }
     
-    .one-third.column                { width: ($grid-base / 3) - $both-gutters; }
-    .two-thirds.column               { width: (2 * ($grid-base / 3)) - $both-gutters; }
-    
+//    .one-third.column                { width: ($grid-base / 3) - $both-gutters; }
+//    .two-thirds.column               { width: (2 * ($grid-base / 3)) - $both-gutters; }
+
+    .one-third.columns,
+    .one-third.column             { width: 33.333% - percentage-calc($both-gutters); }
+    .two-thirds.columns,
+    .two-thirds.column            { width: 66.667% - percentage-calc($both-gutters); }
+
     /* Offsets */
     .offset-by-one                   { padding-left: col-offset(1); }
     .offset-by-two                   { padding-left: col-offset(2); }
@@ -97,9 +102,12 @@
         .fourteen.columns             { width: col-width(14, $tablet-base); }
         .fifteen.columns              { width: col-width(15, $tablet-base); }
         .sixteen.columns              { width: col-width(16, $tablet-base); }
-        
-        .one-third.column             { width: ($tablet-base / 3) - $both-gutters; }
-        .two-thirds.column            { width: (2 * ($tablet-base / 3)) - $both-gutters; }
+
+        .one-third.columns,
+        .one-third.column             { width: 33.333% - percentage-calc($both-gutters); }
+        .two-thirds.columns,
+        .two-thirds.column            { width: 66.667% - percentage-calc($both-gutters); }
+
         
         /* Offsets */
         .offset-by-one                { padding-left: col-offset(1, $column-offset-tablet); }
@@ -156,6 +164,7 @@
         .one-third.column,
         .two-thirds.columns,
         .two-thirds.column { width: 100%; }
+
         
         /* Offsets */
         .offset-by-one,

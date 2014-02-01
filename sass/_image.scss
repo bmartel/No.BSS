@@ -1,11 +1,11 @@
-@import "globals";
+@import "globals", "helpers/mixins";
 
 
 /* #Image
 ================================================== */
 .scale-with-grid {
     @include scale-with-grid();
-    
+
     img { 
         @include scale-with-grid();
     }
