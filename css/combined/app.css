@@ -356,10 +356,11 @@ li p {
 }
 /* #Buttons
 ================================================== */
-/* line 134, ../sass/_buttons.scss */
+/* line 138, ../sass/_buttons.scss */
 .btn {
   border-style: solid;
   border-width: 0px;
+  border-color: transparent;
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
@@ -369,146 +370,168 @@ li p {
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  padding-top: 0.875rem;
-  padding-right: 1.75rem;
-  padding-bottom: 0.9375rem;
-  padding-left: 1.75rem;
-  font-size: 0.8125rem;
+  padding-top: 0.625rem;
+  padding-right: 1.25rem;
+  padding-bottom: 0.6875rem;
+  padding-left: 1.25rem;
+  font-size: 0.6875rem;
   background-color: #e5e5e5;
-  border-color: #cecece;
+  border: 0.0625rem solid #cecece;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   color: #333333;
 }
-/* line 96, ../sass/_buttons.scss */
+/* line 100, ../sass/_buttons.scss */
 .btn:hover, .btn:focus {
   background-color: #cecece;
 }
-/* line 101, ../sass/_buttons.scss */
+/* line 105, ../sass/_buttons.scss */
 .btn:hover, .btn:focus {
   color: #333333;
 }
-/* line 139, ../sass/_buttons.scss */
+/* line 143, ../sass/_buttons.scss */
 .btn.tiny {
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5625rem;
+  padding-left: 1rem;
+  font-size: 0.625rem;
+}
+/* line 144, ../sass/_buttons.scss */
+.btn.small {
   padding-top: 0.625rem;
   padding-right: 1.25rem;
   padding-bottom: 0.6875rem;
   padding-left: 1.25rem;
   font-size: 0.6875rem;
 }
-/* line 140, ../sass/_buttons.scss */
-.btn.small {
+/* line 145, ../sass/_buttons.scss */
+.btn.medium {
   padding-top: 0.875rem;
   padding-right: 1.75rem;
   padding-bottom: 0.9375rem;
   padding-left: 1.75rem;
   font-size: 0.8125rem;
 }
-/* line 141, ../sass/_buttons.scss */
-.btn.medium {
+/* line 146, ../sass/_buttons.scss */
+.btn.large {
   padding-top: 1rem;
   padding-right: 2rem;
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
 }
-/* line 142, ../sass/_buttons.scss */
-.btn.large {
+/* line 147, ../sass/_buttons.scss */
+.btn.xlarge {
   padding-top: 1.125rem;
   padding-right: 2.25rem;
   padding-bottom: 1.1875rem;
   padding-left: 2.25rem;
   font-size: 1.25rem;
 }
-/* line 144, ../sass/_buttons.scss */
+/* line 149, ../sass/_buttons.scss */
+.btn.light {
+  background-color: whitesmoke;
+  border: 0.0625rem solid #bbbbbb;
+  color: #666666;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 158, ../sass/_buttons.scss */
+.btn.light:hover, .btn.light:focus {
+  background-color: #dddddd;
+}
+/* line 161, ../sass/_buttons.scss */
 .btn.primary {
   background-color: #1f8dd6;
-  border-color: #1c7fc1;
+  border: 0.0625rem solid #1c7fc1;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   color: white;
 }
-/* line 96, ../sass/_buttons.scss */
+/* line 100, ../sass/_buttons.scss */
 .btn.primary:hover, .btn.primary:focus {
   background-color: #1c7fc1;
 }
-/* line 106, ../sass/_buttons.scss */
+/* line 110, ../sass/_buttons.scss */
 .btn.primary:hover, .btn.primary:focus {
   color: white;
 }
-/* line 148, ../sass/_buttons.scss */
+/* line 165, ../sass/_buttons.scss */
 .btn.alert {
   background-color: #ca3c3c;
-  border-color: #b93232;
+  border: 0.0625rem solid #b93232;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   color: white;
 }
-/* line 96, ../sass/_buttons.scss */
+/* line 100, ../sass/_buttons.scss */
 .btn.alert:hover, .btn.alert:focus {
   background-color: #b93232;
 }
-/* line 106, ../sass/_buttons.scss */
+/* line 110, ../sass/_buttons.scss */
 .btn.alert:hover, .btn.alert:focus {
   color: white;
 }
-/* line 152, ../sass/_buttons.scss */
+/* line 169, ../sass/_buttons.scss */
 .btn.success {
   background-color: #1cb841;
-  border-color: #19a63b;
+  border: 0.0625rem solid #19a63b;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   color: white;
 }
-/* line 96, ../sass/_buttons.scss */
+/* line 100, ../sass/_buttons.scss */
 .btn.success:hover, .btn.success:focus {
   background-color: #19a63b;
 }
-/* line 106, ../sass/_buttons.scss */
+/* line 110, ../sass/_buttons.scss */
 .btn.success:hover, .btn.success:focus {
   color: white;
 }
-/* line 156, ../sass/_buttons.scss */
+/* line 173, ../sass/_buttons.scss */
 .btn.warning {
   background-color: #df7514;
-  border-color: #c96912;
+  border: 0.0625rem solid #c96912;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   color: white;
 }
-/* line 96, ../sass/_buttons.scss */
+/* line 100, ../sass/_buttons.scss */
 .btn.warning:hover, .btn.warning:focus {
   background-color: #c96912;
 }
-/* line 106, ../sass/_buttons.scss */
+/* line 110, ../sass/_buttons.scss */
 .btn.warning:hover, .btn.warning:focus {
   color: white;
 }
-/* line 160, ../sass/_buttons.scss */
+/* line 177, ../sass/_buttons.scss */
 .btn.info {
   background-color: #42b8dd;
-  border-color: #2aafd9;
+  border: 0.0625rem solid #2aafd9;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   color: white;
 }
-/* line 96, ../sass/_buttons.scss */
+/* line 100, ../sass/_buttons.scss */
 .btn.info:hover, .btn.info:focus {
   background-color: #2aafd9;
 }
-/* line 106, ../sass/_buttons.scss */
+/* line 110, ../sass/_buttons.scss */
 .btn.info:hover, .btn.info:focus {
   color: white;
 }

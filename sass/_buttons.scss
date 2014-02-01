@@ -1,9 +1,10 @@
 @import "globals","compass/css3/transition";
 
-$button-tny: rem-calc(10) !default;
-$button-sml: rem-calc(14) !default;
-$button-med: rem-calc(16) !default;
-$button-lrg: rem-calc(18) !default;
+$button-tny: rem-calc(8) !default;
+$button-sml: rem-calc(10) !default;
+$button-med: rem-calc(14) !default;
+$button-lrg: rem-calc(16) !default;
+$button-xlrg: rem-calc(18) !default;
 
 $button-display: inline-block !default;
 $button-margin-bottom: rem-calc(20) !default;
@@ -11,10 +12,11 @@ $button-margin-bottom: rem-calc(20) !default;
 $button-font-family: $body-font-family !default;
 $button-font-color: #fff !default;
 $button-font-color-alt: #333 !default;
-$button-font-tny: rem-calc(11) !default;
-$button-font-sml: rem-calc(13) !default;
-$button-font-med: rem-calc(16) !default;
-$button-font-lrg: rem-calc(20) !default;
+$button-font-tny: rem-calc(10) !default;
+$button-font-sml: rem-calc(11) !default;
+$button-font-med: rem-calc(13) !default;
+$button-font-lrg: rem-calc(16) !default;
+$button-font-xlrg: rem-calc(20) !default;
 $button-font-weight: normal !default;
 $button-font-align: center !default;
 
@@ -30,6 +32,7 @@ $button-disabled-opacity: 0.7 !default;
   @if $style {
     border-style: $button-border-style;
     border-width: $button-border-width;
+    border-color: transparent;
     cursor: $cursor-pointer-value;
     font-family: $button-font-family;
     font-weight: $button-font-weight;
@@ -54,6 +57,7 @@ $button-disabled-opacity: 0.7 !default;
     @else if $padding == $button-tny { font-size: $button-font-tny; }
     @else if $padding == $button-sml { font-size: $button-font-sml; }
     @else if $padding == $button-lrg { font-size: $button-font-lrg; }
+    @else if $padding == $button-xlrg { font-size: $button-font-xlrg; }
   }
 
   @if $full-width {
@@ -90,7 +94,7 @@ $button-disabled-opacity: 0.7 !default;
     $bg-lightness: lightness($bg);
 
     background-color: $bg;
-    border-color: scale-color($bg, $lightness: $button-function-factor);
+    border: rem(1) solid scale-color($bg, $lightness: $button-function-factor);
     @include transition(all 0.2s linear);
     &:hover,
     &:focus { background-color: scale-color($bg, $lightness: $button-function-factor); }
@@ -140,7 +144,20 @@ $button-disabled-opacity: 0.7 !default;
     &.small{ @include button-size($button-sml, false, false); }
     &.medium{ @include button-size($button-med, false, false); }
     &.large{ @include button-size($button-lrg, false, false); }
-    
+    &.xlarge{ @include button-size($button-xlrg, false, false); }
+
+    &.light{
+      $bg: #f5f5f5;
+      background-color: $bg;
+      border: rem(1) solid #bbbbbb;
+
+      color:#666666;
+
+      @include transition(all 0.2s linear);
+      &:hover,
+      &:focus { background-color: scale-color($bg, $lightness: $button-function-factor); }
+    }
+
     &.primary{
         @include button-style($primary-color, false, false);    
     }
