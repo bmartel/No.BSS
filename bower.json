@@ -1,0 +1,20 @@
+{
+  "name": "No.BSS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bmartel/No.BSS",
+  "authors": [
+    "bmartel <brandonmartel@gmail.com>"
+  ],
+  "description": "Simple HTML5/CSS3 layout",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "~4.0.3"
+  }
+}
