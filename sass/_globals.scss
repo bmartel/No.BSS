@@ -48,10 +48,10 @@ $dark-gray:                     darken($gray, 5%);
 $purple:                        #8f00ff !default;
 $light-purple:                  lighten($purple, 30%);
 
-$table-bg-color:                #fdfdfd !default;
+$table-bg-color:                #ffffff !default;
 $table-font-color:              $body-font-color;
-$table-stripe-color:            #f6f6f6;
-$thead-bg-color:                #e5e5e5;
+$table-stripe-color:            #F5F5F5 !default;
+$thead-bg-color:                #ECECEC !default;
 $thead-font-color:              darken($body-font-color, 35%);
 $td-bg-color:                   transparent;
 $table-border-color:            #cecece !default;

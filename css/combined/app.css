@@ -1114,6 +1114,7 @@ or wrap each row of columns in a <div class="row"> */
   border-spacing: 0;
   empty-cells: show;
   border: 0.0625rem solid #cbcbcb;
+  background-color: white;
 }
 /* line 12, ../sass/_tables.scss */
 .clean-table caption {
@@ -1138,7 +1139,7 @@ or wrap each row of columns in a <div class="row"> */
 }
 /* line 33, ../sass/_tables.scss */
 .clean-table thead {
-  background: #e5e5e5;
+  background: #ececec;
   color: #090909;
   text-align: left;
   vertical-align: bottom;
@@ -1150,12 +1151,12 @@ or wrap each row of columns in a <div class="row"> */
 
 /* line 45, ../sass/_tables.scss */
 .clean-table-odd td {
-  background-color: #f6f6f6;
+  background-color: whitesmoke;
 }
 
 /* line 49, ../sass/_tables.scss */
 .clean-table-striped tr:nth-child(2n) td {
-  background-color: #f6f6f6;
+  background-color: whitesmoke;
 }
 
 /* line 53, ../sass/_tables.scss */

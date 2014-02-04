@@ -8,7 +8,7 @@
     border-spacing: 0;
     empty-cells: show;
     border: rem(1px) solid #cbcbcb;
-
+    background-color: $table-bg-color;
     caption {
         color: #000;
         font: italic 85%/1 Arial, sans-serif;
