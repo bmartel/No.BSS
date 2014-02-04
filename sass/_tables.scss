@@ -8,7 +8,7 @@
     border-spacing: 0;
     empty-cells: show;
     border: rem(1px) solid #cbcbcb;
-    
+
     caption {
         color: #000;
         font: italic 85%/1 Arial, sans-serif;
@@ -46,7 +46,7 @@
     background-color: $table-stripe-color;
 }
 
-.clean-table-striped tr:nth-child(2n-1) td {
+.clean-table-striped tr:nth-child(2n) td {
     background-color: $table-stripe-color;
 }
 
@@ -68,3 +68,4 @@
 .clean-table-horizontal tbody > tr:last-child td {
     border-bottom-width: 0;
 }
+

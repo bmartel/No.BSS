@@ -9,7 +9,9 @@
     z-index: 90;
     
 }
-
+.scrollable{
+  overflow-x: scroll;
+}
 .bg-color {
   &.dark   { background-color: $background-color-alt; }
   &.light  { background-color: $background-color; }

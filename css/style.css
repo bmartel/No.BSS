@@ -141,47 +141,58 @@ h6 {
   color: #777;
 }
 
-/* line 35, ../sass/_typography.scss */
+/* line 39, ../sass/_typography.scss */
+.row .column h1:first-child, .row .column h2:first-child, .row .column h3:first-child, .row .column h4:first-child, .row .column h5:first-child, .row .column h6:first-child,
+.row .columns h1:first-child,
+.row .columns h2:first-child,
+.row .columns h3:first-child,
+.row .columns h4:first-child,
+.row .columns h5:first-child,
+.row .columns h6:first-child {
+  margin-top: 0;
+}
+
+/* line 45, ../sass/_typography.scss */
 p {
   font-family: inherit;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.625rem;
   text-rendering: optimizeLegibility;
 }
-/* line 43, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 p img {
   margin: 0;
 }
-/* line 44, ../sass/_typography.scss */
+/* line 54, ../sass/_typography.scss */
 p.lead {
   font-size: 1.21875rem;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-/* line 51, ../sass/_typography.scss */
+/* line 61, ../sass/_typography.scss */
 .content p {
   font-size: 1.0625rem;
 }
 
-/* line 54, ../sass/_typography.scss */
+/* line 64, ../sass/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 55, ../sass/_typography.scss */
+/* line 65, ../sass/_typography.scss */
 strong {
   font-weight: bold;
   color: #333;
 }
 
-/* line 56, ../sass/_typography.scss */
+/* line 66, ../sass/_typography.scss */
 small {
   font-size: 80%;
 }
 
-/* line 58, ../sass/_typography.scss */
+/* line 68, ../sass/_typography.scss */
 blockquote, blockquote p {
   font-size: 1.0625rem;
   line-height: 1.5rem;
@@ -189,31 +200,31 @@ blockquote, blockquote p {
   font-style: italic;
 }
 
-/* line 59, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 0.0625rem solid #dddddd;
 }
 
-/* line 60, ../sass/_typography.scss */
+/* line 70, ../sass/_typography.scss */
 blockquote cite {
   display: block;
   font-size: 0.75rem;
   color: #555;
 }
 
-/* line 61, ../sass/_typography.scss */
+/* line 71, ../sass/_typography.scss */
 blockquote cite:before {
   content: "\2014 \0020";
 }
 
-/* line 62, ../sass/_typography.scss */
+/* line 72, ../sass/_typography.scss */
 blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
   color: #555;
 }
 
-/* line 64, ../sass/_typography.scss */
+/* line 74, ../sass/_typography.scss */
 hr {
   border: solid #ddd;
   border-width: 0.0625rem 0 0;
@@ -222,134 +233,134 @@ hr {
   height: 0;
 }
 
-/* line 66, ../sass/_typography.scss */
+/* line 76, ../sass/_typography.scss */
 a, a:visited {
   color: #333;
   text-decoration: underline;
   outline: 0;
 }
 
-/* line 67, ../sass/_typography.scss */
+/* line 77, ../sass/_typography.scss */
 a:hover, a:focus {
   color: #000;
 }
 
-/* line 68, ../sass/_typography.scss */
+/* line 78, ../sass/_typography.scss */
 p a, p a:visited {
   line-height: inherit;
 }
 
-/* line 70, ../sass/_typography.scss */
+/* line 80, ../sass/_typography.scss */
 ul, ol {
   margin-bottom: 1.25rem;
 }
 
-/* line 71, ../sass/_typography.scss */
+/* line 81, ../sass/_typography.scss */
 ul {
   list-style: none outside;
 }
 
-/* line 72, ../sass/_typography.scss */
+/* line 82, ../sass/_typography.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 73, ../sass/_typography.scss */
+/* line 83, ../sass/_typography.scss */
 ol, ul.square, ul.circle, ul.disc {
   margin-left: 1.875rem;
 }
 
-/* line 74, ../sass/_typography.scss */
+/* line 84, ../sass/_typography.scss */
 ul.square {
   list-style: square outside;
 }
 
-/* line 75, ../sass/_typography.scss */
+/* line 85, ../sass/_typography.scss */
 ul.circle {
   list-style: circle outside;
 }
 
-/* line 76, ../sass/_typography.scss */
+/* line 86, ../sass/_typography.scss */
 ul.disc {
   list-style: disc outside;
 }
 
-/* line 78, ../sass/_typography.scss */
+/* line 88, ../sass/_typography.scss */
 ul ul, ul ol,
 ol ol, ol ul {
   margin: 0.25rem 0 0.3125rem 1.875rem;
   font-size: 90%;
 }
 
-/* line 80, ../sass/_typography.scss */
+/* line 90, ../sass/_typography.scss */
 ul ul li, ul ol li,
 ol ol li, ol ul li {
   margin-bottom: 0.375rem;
 }
 
-/* line 81, ../sass/_typography.scss */
+/* line 91, ../sass/_typography.scss */
 li {
   line-height: 1.125rem;
   margin-bottom: 0.75rem;
 }
 
-/* line 82, ../sass/_typography.scss */
+/* line 92, ../sass/_typography.scss */
 ul.large li {
   line-height: 1.3125rem;
 }
 
-/* line 83, ../sass/_typography.scss */
+/* line 93, ../sass/_typography.scss */
 li p {
   line-height: 1.3125rem;
 }
 
-/* line 86, ../sass/_typography.scss */
+/* line 96, ../sass/_typography.scss */
 .text.center {
   text-align: center;
 }
-/* line 87, ../sass/_typography.scss */
+/* line 97, ../sass/_typography.scss */
 .text.primary {
   color: #1f8dd6;
 }
-/* line 88, ../sass/_typography.scss */
+/* line 98, ../sass/_typography.scss */
 .text.secondary {
   color: #e5e5e5;
 }
-/* line 89, ../sass/_typography.scss */
+/* line 99, ../sass/_typography.scss */
 .text.alert {
   color: #ca3c3c;
 }
-/* line 90, ../sass/_typography.scss */
+/* line 100, ../sass/_typography.scss */
 .text.success {
   color: #1cb841;
 }
-/* line 91, ../sass/_typography.scss */
+/* line 101, ../sass/_typography.scss */
 .text.warning {
   color: #df7514;
 }
-/* line 92, ../sass/_typography.scss */
+/* line 102, ../sass/_typography.scss */
 .text.info {
   color: #42b8dd;
 }
-/* line 93, ../sass/_typography.scss */
+/* line 103, ../sass/_typography.scss */
 .text.purple {
   color: #8f00ff;
 }
-/* line 94, ../sass/_typography.scss */
+/* line 104, ../sass/_typography.scss */
 .text.dark-gray {
   color: #555555;
 }
-/* line 95, ../sass/_typography.scss */
+/* line 105, ../sass/_typography.scss */
 .text.light-purple {
   color: #d299ff;
 }
-/* line 96, ../sass/_typography.scss */
+/* line 106, ../sass/_typography.scss */
 .text.de-emphasize {
   color: #777777;
 }
 
 @media only screen and (min-width: 48rem) {
-  /* line 99, ../sass/_typography.scss */
+  /* line 109, ../sass/_typography.scss */
   .icon-center {
     text-align: center;
   }
@@ -382,6 +393,11 @@ li p {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   color: #333333;
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  -ms-border-radius: 0.1875rem;
+  -o-border-radius: 0.1875rem;
+  border-radius: 0.1875rem;
 }
 /* line 100, ../sass/_buttons.scss */
 .btn:hover, .btn:focus {
@@ -560,19 +576,24 @@ li p {
   z-index: 90;
 }
 
-/* line 14, ../sass/_container.scss */
+/* line 12, ../sass/_container.scss */
+.scrollable {
+  overflow-x: scroll;
+}
+
+/* line 16, ../sass/_container.scss */
 .bg-color.dark {
   background-color: #393939;
 }
-/* line 15, ../sass/_container.scss */
+/* line 17, ../sass/_container.scss */
 .bg-color.light {
   background-color: #fdfdfd;
 }
-/* line 16, ../sass/_container.scss */
+/* line 18, ../sass/_container.scss */
 .bg-color.gray {
   background-color: #626262;
 }
-/* line 17, ../sass/_container.scss */
+/* line 19, ../sass/_container.scss */
 .bg-color.purple {
   background-color: #8f00ff;
 }
@@ -1129,12 +1150,12 @@ or wrap each row of columns in a <div class="row"> */
 
 /* line 45, ../sass/_tables.scss */
 .clean-table-odd td {
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
 }
 
 /* line 49, ../sass/_tables.scss */
-.clean-table-striped tr:nth-child(2n-1) td {
-  background-color: #f2f2f2;
+.clean-table-striped tr:nth-child(2n) td {
+  background-color: #f6f6f6;
 }
 
 /* line 53, ../sass/_tables.scss */

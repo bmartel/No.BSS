@@ -1,4 +1,4 @@
-@import "globals","compass/css3/transition";
+@import "globals","compass/css3","compass/css3/transition", "compass/utilities";
 
 $button-tny: rem-calc(8) !default;
 $button-sml: rem-calc(10) !default;
@@ -122,8 +122,8 @@ $button-disabled-opacity: 0.7 !default;
     &:focus { background-color: $bg; }
   }
 
-  @if $radius == true { @include radius($button-radius); }
-  @else if $radius { @include radius($radius); }
+  @if $radius == true { @include border-radius($button-radius); }
+  @else if $radius { @include border-radius($radius); }
 
 }
 
@@ -138,7 +138,7 @@ $button-disabled-opacity: 0.7 !default;
 .btn{
     @include button-base;
     @include button-size($button-sml, false, false);
-    @include button-style($secondary-color, false, false);  
+    @include button-style($secondary-color, true, false);
     
     &.tiny{ @include button-size($button-tny, false, false); }
     &.small{ @include button-size($button-sml, false, false); }
