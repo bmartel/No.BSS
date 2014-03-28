@@ -78,7 +78,7 @@
 
 @media #{$mobile-tablet-screen-portrait} {
     .container { 
-        width: $tablet-base; 
+        width: $tablet-base;
         .column,
         .columns                         { margin-left: $column-gutter; margin-right: $column-gutter;  }
         .column.alpha, .columns.alpha    { margin-left: 0; margin-right: $column-gutter; }
@@ -136,7 +136,7 @@
 
 @media #{$mobile-phone-screen-portrait} {
     .container {
-        width:              $mobile-portrait-base - $both-gutters;
+        width: 100%;
         .content{
           width: 98%;
           margin: 0 auto;

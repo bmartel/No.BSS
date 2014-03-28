@@ -13,5 +13,8 @@
     "bower": "~1.2.8"
   },
   "author": "Brandon Martel",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+     "postinstall": "bower install||true;grunt base-dev"
+   }
 }
